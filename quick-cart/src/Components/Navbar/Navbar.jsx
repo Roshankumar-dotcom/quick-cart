@@ -5,7 +5,7 @@ import cart from "../Assets/cart.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [tab, setTab] = useState("");
+  const [tab, setTab] = useState("shop");
   return (
     <div className="navbar">
       <div className="logo">
@@ -15,7 +15,7 @@ const Navbar = () => {
       <ul className="tabs">
         <li
           onClick={() => {
-            setTab("grocery");
+            setTab("Shop");
           }}
         >
           <Link style={{ textDecoration: "none" }} to="/">
@@ -30,7 +30,7 @@ const Navbar = () => {
         >
           <Link style={{ textDecoration: "none" }} to="/electronics">
             Electonics
-          </Link>{" "}
+          </Link>
           {tab === "electronics" ? <hr /> : <></>}
         </li>
         <li
@@ -40,7 +40,7 @@ const Navbar = () => {
         >
           <Link style={{ textDecoration: "none" }} to="/men">
             Men
-          </Link>{" "}
+          </Link>
           {tab === "mens" ? <hr /> : <></>}
         </li>
         <li
@@ -50,7 +50,7 @@ const Navbar = () => {
         >
           <Link style={{ textDecoration: "none" }} to="/women">
             Women
-          </Link>{" "}
+          </Link>
           {tab === "womens" ? <hr /> : <></>}
         </li>
         <li
@@ -60,7 +60,7 @@ const Navbar = () => {
         >
           <Link style={{ textDecoration: "none" }} to="/aboutus">
             About Us
-          </Link>{" "}
+          </Link>
           {tab === "aboutus" ? <hr /> : <></>}
         </li>
       </ul>
