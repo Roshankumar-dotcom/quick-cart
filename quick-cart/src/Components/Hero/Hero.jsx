@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import handIcon from '../Assets/handIcon.png'
 import modelImage from '../Assets/modelsImage.jpg'
 import './Hero.css'
 const Hero = () => {
+
   return (
     <div className='hero'>
         <div className="left-side">
